@@ -59,6 +59,11 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+/* font sizes */
 .f-default {
   font-size: 16px;
 }
@@ -73,14 +78,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .f-large {
   font-size: 28px;
-}
-
-h1, h2 {
-  line-height: 28px;
-}
-
-p {
-  line-height: 25px;
 }
 
 /* font weights */
@@ -140,4 +137,76 @@ p {
 
 .white-text {
   color: hsl(0deg, 0%, 100%);
+}
+
+/* paddings */
+.p-1 {
+  padding: 24px;
+}
+
+/* -------- */
+/* gap */
+.gap-1 {
+  gap: 16px;
+}
+
+/* -------- */
+h1, h2 {
+  line-height: 28px;
+}
+
+p {
+  line-height: 25px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+}
+.description .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.description .price .discount {
+  display: flex;
+  align-items: center;
+}
+.description .price .discount :last-child {
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+.description .summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 56px;
+}
+.description .purchase {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 56px;
+  box-shadow: 0px 20px 50px -20px var(--orange);
+  cursor: pointer;
+}
+
+.btn-small {
+  padding: 10px;
 }/*# sourceMappingURL=styles.css.map */
