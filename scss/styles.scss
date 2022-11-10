@@ -158,6 +158,10 @@ body {
 .gap-1 {
     gap: 16px;
 }
+
+.gap-2 {
+    gap: 22px;
+}
 /* -------- */
 
 
@@ -173,6 +177,7 @@ button {
     cursor: pointer;
     border: none;
     background: none;
+    padding: 0;
 }
 
 .line-through {
@@ -183,6 +188,26 @@ button {
     border-radius: 10px;
 }
 
+.btn-small {
+    padding: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+
+    .cart-container {
+        align-items: center;
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
 
 .gallery {
     position: relative;
@@ -258,8 +283,4 @@ button {
         box-shadow: 0px 20px 50px -20px var(--orange);
         cursor: pointer;
     }
-}
-
-.btn-small {
-    padding: 10px;
 }

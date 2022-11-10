@@ -150,6 +150,10 @@ body {
   gap: 16px;
 }
 
+.gap-2 {
+  gap: 22px;
+}
+
 /* -------- */
 h1, h2 {
   line-height: 28px;
@@ -163,6 +167,7 @@ button {
   cursor: pointer;
   border: none;
   background: none;
+  padding: 0;
 }
 
 .line-through {
@@ -171,6 +176,26 @@ button {
 
 .rounded {
   border-radius: 10px;
+}
+
+.btn-small {
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+}
+header .cart-container {
+  align-items: center;
+}
+header .cart-container img {
+  width: 24px;
+  height: 24px;
 }
 
 .gallery {
@@ -250,8 +275,4 @@ button {
   height: 56px;
   box-shadow: 0px 20px 50px -20px var(--orange);
   cursor: pointer;
-}
-
-.btn-small {
-  padding: 10px;
 }/*# sourceMappingURL=styles.css.map */
