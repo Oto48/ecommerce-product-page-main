@@ -173,6 +173,51 @@ button {
   border-radius: 10px;
 }
 
+.gallery {
+  position: relative;
+}
+.gallery .picture {
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+@-webkit-keyframes animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.gallery .active {
+  display: block;
+  -webkit-animation-name: animation;
+          animation-name: animation;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+.gallery .gallery-arrows {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px;
+}
+.gallery .gallery-arrows .arrow {
+  padding: 11px 14px;
+  border-radius: 50%;
+}
+
 .description {
   display: flex;
   flex-direction: column;
