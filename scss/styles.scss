@@ -6,3 +6,56 @@ $grey-blue: hsl(220, 14%, 75%);
 $light-blue: hsl(223, 64%, 98%);
 $white: hsl(0, 0%, 100%);
 $black: hsl(0, 0%, 0%);
+
+
+/* background colors */
+
+.bg-orange {
+    background-color: $orange;
+}
+
+.bg-pale-orange {
+    background-color: $pale-orange;
+}
+
+.bg-dark-blue {
+    background-color: $dark-blue;
+}
+
+.bg-dark-grey-blue {
+    background-color: $dark-grey;
+}
+
+.bg-grey-blue {
+    background-color: $grey-blue;
+}
+
+.bg-light-blue {
+    background-color: $light-blue;
+}
+
+.bg-white {
+    background-color: $white;
+}
+
+.bg-black {
+    background-color: $black;
+}
+
+/* text colors */
+
+.orange-text {
+    color: $orange;
+}
+
+.grey-blue-text {
+    color: $grey-blue;
+}
+
+.dark-grey-text {
+    color: $dark-grey;
+}
+
+.white-text {
+    color: $white;
+}

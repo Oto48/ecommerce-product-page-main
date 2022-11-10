@@ -1,1 +1,49 @@
-/*# sourceMappingURL=styles.css.map */
+/* background colors */
+.bg-orange {
+  background-color: hsl(26deg, 100%, 55%);
+}
+
+.bg-pale-orange {
+  background-color: hsl(25deg, 100%, 94%);
+}
+
+.bg-dark-blue {
+  background-color: hsl(220deg, 13%, 13%);
+}
+
+.bg-dark-grey-blue {
+  background-color: hsl(219deg, 9%, 45%);
+}
+
+.bg-grey-blue {
+  background-color: hsl(220deg, 14%, 75%);
+}
+
+.bg-light-blue {
+  background-color: hsl(223deg, 64%, 98%);
+}
+
+.bg-white {
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.bg-black {
+  background-color: hsl(0deg, 0%, 0%);
+}
+
+/* text colors */
+.orange-text {
+  color: hsl(26deg, 100%, 55%);
+}
+
+.grey-blue-text {
+  color: hsl(220deg, 14%, 75%);
+}
+
+.dark-grey-text {
+  color: hsl(219deg, 9%, 45%);
+}
+
+.white-text {
+  color: hsl(0deg, 0%, 100%);
+}/*# sourceMappingURL=styles.css.map */
