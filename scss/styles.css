@@ -157,6 +157,12 @@ body {
 }
 
 /* -------- */
+/* margins */
+.mb-2 {
+  margin-bottom: 42px;
+}
+
+/* -------- */
 /* gap */
 .gap-1 {
   gap: 16px;
@@ -216,9 +222,11 @@ header .cart-container img {
 
 .modal {
   position: absolute;
+  top: 0;
   z-index: 100;
   width: 100%;
   height: 100%;
+  display: none;
 }
 .modal nav {
   width: 250px;
@@ -231,6 +239,10 @@ header .cart-container img {
 }
 .modal nav ul a {
   color: hsl(220deg, 13%, 13%);
+}
+
+.active-menu {
+  display: block;
 }
 
 .gallery {

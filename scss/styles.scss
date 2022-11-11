@@ -167,6 +167,12 @@ body {
 }
 /* -------- */
 
+/* margins */
+.mb-2 {
+    margin-bottom: 42px;
+}
+/* -------- */
+
 /* gap */
 .gap-1 {
     gap: 16px;
@@ -228,9 +234,12 @@ header {
 
 .modal {
     position: absolute;
+    top: 0;
     z-index: 100;
     width: 100%;
     height: 100%;
+    display: none;
+
     nav{
         width: 250px;
         height: 100%;
@@ -244,6 +253,10 @@ header {
             }
         }
     }
+}
+
+.active-menu {
+    display: block;
 }
 
 .gallery {
