@@ -9,7 +9,7 @@
 </head>
 <body>
 
-  <div class="container">
+  <div class="container text-dark-blue">
     <header class="p-1 flex">
       <div class="flex gap-1">
         <button>
@@ -47,6 +47,23 @@
         <img src="images/image-avatar.png" alt="">
       </div>
     </header>
+    <div class="modal bg-black-transparent">
+      <nav class="bg-white p-1">
+        <button>
+          <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg">
+            <path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 
+            7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#69707D" fill-rule="evenodd"/>
+          </svg>
+        </button>
+        <ul class="f-large bold">
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
     <div class="gallery" id="gallery">
       <img src="images/image-product-1.jpg" class="picture active" alt="image 1">
       <img src="images/image-product-2.jpg" class="picture" alt="image 2">
@@ -67,19 +84,19 @@
     </div>
 
     <div class="description p-1 gap-1">
-      <p class="orange-text f-small bold">SNEAKER COMPANY</p>
-      <h1 class="f-large bold">Fall Limited Edition Sneakers</h1>
-      <p class="f-medium dark-grey-text">
+      <p class="text-orange f-small bold">SNEAKER COMPANY</p>
+      <h1 class="f-xl bold">Fall Limited Edition Sneakers</h1>
+      <p class="f-medium text-dark-grey">
         These low-profile sneakers are your perfect casual wear companion.
         Featuring a durable rubber outer sole, they’ll withstand everything the
         weather can offer.
       </p>
       <div class="price">
         <div  class="bold discount gap-1">
-          <h2 class="f-large">$125.00</h2>
-          <p class="f-default bg-pale-orange orange-text">50%</p>
+          <h2 class="f-xl">$125.00</h2>
+          <p class="f-default bg-pale-orange text-orange">50%</p>
         </div>
-        <p class="bold f-default grey-blue-text line-through">$250.00</p>
+        <p class="bold f-default text-grey-blue line-through">$250.00</p>
       </div>
       <div class="summary bg-light-blue p-1 rounded">
         <button class="btn-small">
@@ -102,7 +119,7 @@
           </svg>
         </button>
       </div>
-      <button class="purchase bg-orange f-default bold white-text rounded gap-1">
+      <button class="purchase bg-orange f-default bold text-white rounded gap-1">
         <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
           <path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0
           0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0

@@ -77,6 +77,10 @@ body {
 }
 
 .f-large {
+  font-size: 18px;
+}
+
+.f-xl {
   font-size: 28px;
 }
 
@@ -122,20 +126,28 @@ body {
   background-color: hsl(0deg, 0%, 0%);
 }
 
+.bg-black-transparent {
+  background-color: hsla(0deg, 0%, 0%, 0.75);
+}
+
 /* text colors */
-.orange-text {
+.text-orange {
   color: hsl(26deg, 100%, 55%);
 }
 
-.grey-blue-text {
+.text-grey-blue {
   color: hsl(220deg, 14%, 75%);
 }
 
-.dark-grey-text {
+.text-dark-blue {
+  color: hsl(220deg, 13%, 13%);
+}
+
+.text-dark-grey {
   color: hsl(219deg, 9%, 45%);
 }
 
-.white-text {
+.text-white {
   color: hsl(0deg, 0%, 100%);
 }
 
@@ -170,6 +182,10 @@ button {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .line-through {
   text-decoration: line-through;
 }
@@ -196,6 +212,25 @@ header .cart-container {
 header .cart-container img {
   width: 24px;
   height: 24px;
+}
+
+.modal {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+.modal nav {
+  width: 250px;
+  height: 100%;
+}
+.modal nav ul {
+  list-style: none;
+  padding: 0;
+  line-height: 45px;
+}
+.modal nav ul a {
+  color: hsl(220deg, 13%, 13%);
 }
 
 .gallery {
