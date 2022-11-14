@@ -219,10 +219,6 @@ a {
     padding: 10px;
 }
 
-.flex {
-    display: flex;
-}
-
 .column {
     flex-direction: column;
 }
@@ -236,6 +232,27 @@ header {
         img {
             width: 24px;
             height: 24px;
+        }
+    }
+
+    .basket-btn {
+        position: relative;
+        .amount {
+            position: absolute;
+            display: none;
+            top: 0;
+            right: 0;
+            transform: translate(50%, -50%);
+            border-radius: 6.5px;
+            font-size: 10px;
+            width: 19px;
+            height: 13px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .flex-amount {
+            display: flex;
         }
     }
 }
@@ -303,6 +320,14 @@ header {
 }
 
 .active-item {
+    display: block;
+}
+
+.flex {
+    display: flex;
+}
+
+.j {
     display: block;
 }
 

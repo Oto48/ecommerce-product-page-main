@@ -208,10 +208,6 @@ a {
   padding: 10px;
 }
 
-.flex {
-  display: flex;
-}
-
 .column {
   flex-direction: column;
 }
@@ -226,6 +222,25 @@ header .cart-container {
 header .cart-container img {
   width: 24px;
   height: 24px;
+}
+header .basket-btn {
+  position: relative;
+}
+header .basket-btn .amount {
+  position: absolute;
+  display: none;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  border-radius: 6.5px;
+  font-size: 10px;
+  width: 19px;
+  height: 13px;
+  align-items: center;
+  justify-content: center;
+}
+header .basket-btn .flex-amount {
+  display: flex;
 }
 
 .basket {
@@ -285,6 +300,14 @@ header .cart-container img {
 }
 
 .active-item {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.j {
   display: block;
 }
 
