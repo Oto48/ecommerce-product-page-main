@@ -156,6 +156,10 @@ body {
   padding: 24px;
 }
 
+.py-1 {
+  padding: 0 24px;
+}
+
 /* -------- */
 /* margins */
 .mb-2 {
@@ -226,6 +230,7 @@ header .cart-container img {
 
 .basket {
   position: absolute;
+  display: none;
   z-index: 100;
   box-shadow: 0px 20px 50px -20px rgba(29, 32, 38, 0.503143);
   top: 80px;
@@ -237,15 +242,21 @@ header .cart-container img {
 .basket .line {
   border: 1px solid #E4E9F2;
 }
-.basket .content {
+.basket .content-1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.basket .content img {
+.basket .content-1 img {
   border-radius: 4px;
   width: 50px;
   height: 50px;
+}
+.basket .content-2 {
+  height: 188px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .basket .checkout {
   width: 100%;
@@ -273,7 +284,7 @@ header .cart-container img {
   color: hsl(220deg, 13%, 13%);
 }
 
-.active-menu {
+.active-item {
   display: block;
 }
 
