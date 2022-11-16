@@ -314,6 +314,9 @@ header .basket-btn .flex-amount {
 .gallery {
   position: relative;
 }
+.gallery .thumbnails {
+  display: none;
+}
 .gallery .picture {
   height: 100%;
   width: 100%;
@@ -387,4 +390,44 @@ header .basket-btn .flex-amount {
   width: 100%;
   height: 56px;
   box-shadow: 0px 20px 50px -20px var(--orange);
+}
+
+@media only screen and (min-width: 1000px) {
+  .gap-1 {
+    gap: 31px;
+  }
+  main {
+    display: flex;
+    align-items: center;
+    gap: 125px;
+  }
+  main .buttons {
+    display: flex;
+  }
+  main .buttons .summary {
+    max-width: 157px;
+  }
+  main .gallery {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  main .gallery img {
+    border-radius: 10px;
+  }
+  main .gallery .gallery-arrows {
+    display: none;
+  }
+  main .gallery .thumbnails {
+    display: flex;
+    justify-content: space-between;
+  }
+  main .gallery .thumbnails img {
+    min-width: 50px;
+    cursor: pointer;
+  }
+  main .gallery .active-large {
+    opacity: 0.6;
+    border: 2px solid hsl(26deg, 100%, 55%);
+  }
 }/*# sourceMappingURL=styles.css.map */

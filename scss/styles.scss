@@ -334,6 +334,10 @@ header {
 .gallery {
     position: relative;
 
+    .thumbnails {
+        display: none;
+    }
+
     .picture {
         height: 100%;
         width: 100%;
@@ -403,5 +407,56 @@ header {
         width: 100%;
         height: 56px;
         box-shadow: 0px 20px 50px -20px var(--orange);
+    }
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+    .gap-1 {
+        gap: 31px;
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        gap: 125px;
+
+        .buttons {
+            display: flex;
+
+            .summary {
+                max-width: 157px;
+            }
+        }
+
+        .gallery {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+
+            img {
+                border-radius: 10px;
+            }
+
+            .gallery-arrows {
+                display: none;
+            }
+
+            .thumbnails {
+                display: flex;
+                justify-content: space-between;
+    
+                img {
+                    min-width: 50px;
+                    cursor: pointer;
+                }
+            }
+
+            .active-large {
+                opacity: 0.60;
+                border: 2px solid $orange;
+            }
+        }
     }
 }
