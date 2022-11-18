@@ -212,21 +212,27 @@ a {
   flex-direction: column;
 }
 
-header {
+.head {
+  flex-direction: column;
+}
+.head header {
   justify-content: space-between;
   align-items: center;
 }
-header .cart-container {
+.head header ul {
+  display: none;
+}
+.head header .cart-container {
   align-items: center;
 }
-header .cart-container img {
+.head header .cart-container img {
   width: 24px;
   height: 24px;
 }
-header .basket-btn {
+.head header .basket-btn {
   position: relative;
 }
-header .basket-btn .amount {
+.head header .basket-btn .amount {
   position: absolute;
   display: none;
   top: 0;
@@ -239,8 +245,11 @@ header .basket-btn .amount {
   align-items: center;
   justify-content: center;
 }
-header .basket-btn .flex-amount {
+.head header .basket-btn .flex-amount {
   display: flex;
+}
+.head .hr {
+  display: none;
 }
 
 .basket {
@@ -393,13 +402,40 @@ header .basket-btn .flex-amount {
 }
 
 @media only screen and (min-width: 1000px) {
+  .head {
+    padding: 24px 165px;
+  }
+  .head header button {
+    display: none;
+  }
+  .head header ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  .head header ul a {
+    color: hsl(219deg, 9%, 45%);
+  }
+  .head header .cart-container img {
+    width: 50px;
+    height: 50px;
+  }
+  .head .hr {
+    display: block;
+    border: 1px solid #E4E9F2;
+  }
+  h1.f-xl {
+    font-size: 44px;
+    line-height: 48px;
+  }
   .gap-1 {
     gap: 31px;
   }
   main {
+    padding: 90px 283px;
     display: flex;
     align-items: center;
-    gap: 125px;
+    gap: 115px;
   }
   main .buttons {
     display: flex;
@@ -429,5 +465,8 @@ header .basket-btn .flex-amount {
   main .gallery .active-large {
     opacity: 0.6;
     border: 2px solid hsl(26deg, 100%, 55%);
+  }
+  main .description {
+    width: 50%;
   }
 }/*# sourceMappingURL=styles.css.map */

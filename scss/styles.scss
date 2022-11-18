@@ -6,6 +6,7 @@ $dark-blue: hsl(220, 13%, 13%);
 $dark-grey: hsl(219, 9%, 45%);
 $grey-blue: hsl(220, 14%, 75%);
 $light-blue: hsl(223, 64%, 98%);
+$medium-blue: #E4E9F2;;
 $white: hsl(0, 0%, 100%);
 $black: hsl(0, 0%, 0%);
 $black-transparent : hsl(0, 0%, 0%, 75%);
@@ -223,37 +224,48 @@ a {
     flex-direction: column;
 }
 
-header {
-    justify-content: space-between;
-    align-items: center;
-
-    .cart-container {
+.head {
+    flex-direction: column;
+    header {
+        justify-content: space-between;
         align-items: center;
-        img {
-            width: 24px;
-            height: 24px;
+    
+        ul {
+            display: none;
+        }
+    
+        .cart-container {
+            align-items: center;
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    
+        .basket-btn {
+            position: relative;
+            .amount {
+                position: absolute;
+                display: none;
+                top: 0;
+                right: 0;
+                transform: translate(50%, -50%);
+                border-radius: 6.5px;
+                font-size: 10px;
+                width: 19px;
+                height: 13px;
+                align-items: center;
+                justify-content: center;
+            }
+    
+            .flex-amount {
+                display: flex;
+            }
         }
     }
 
-    .basket-btn {
-        position: relative;
-        .amount {
-            position: absolute;
-            display: none;
-            top: 0;
-            right: 0;
-            transform: translate(50%, -50%);
-            border-radius: 6.5px;
-            font-size: 10px;
-            width: 19px;
-            height: 13px;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .flex-amount {
-            display: flex;
-        }
+    .hr {
+        display: none;
     }
 }
 
@@ -412,15 +424,48 @@ header {
 
 
 @media only screen and (min-width: 1000px) {
+    .head {
+        padding: 24px 165px;
+        header {
+            button {
+                display: none;
+            }
+            ul {
+                display: flex;
+                list-style: none;
+                padding: 0;
+                a {
+                    color: $dark-grey;
+                }
+            }
+            .cart-container {
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+
+        .hr {
+            display: block;
+            border: 1px solid $medium-blue;
+        }
+    }
+
+    h1.f-xl {
+        font-size: 44px;
+        line-height: 48px;
+    }
 
     .gap-1 {
         gap: 31px;
     }
 
     main {
+        padding: 90px 283px;
         display: flex;
         align-items: center;
-        gap: 125px;
+        gap: 115px;
 
         .buttons {
             display: flex;
@@ -457,6 +502,10 @@ header {
                 opacity: 0.60;
                 border: 2px solid $orange;
             }
+        }
+
+        .description {
+            width: 50%;
         }
     }
 }
