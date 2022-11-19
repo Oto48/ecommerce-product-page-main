@@ -88,10 +88,10 @@
     <main>
       <div class="gallery gap-1">
         <div id="gallery">
-          <img src="images/image-product-1.jpg" class="picture active" alt="image 1">
-          <img src="images/image-product-2.jpg" class="picture" alt="image 2">
-          <img src="images/image-product-3.jpg" class="picture" alt="image 3">
-          <img src="images/image-product-4.jpg" class="picture" alt="image 4">
+          <img src="images/image-product-1.jpg" class="picture rounded active" alt="image 1">
+          <img src="images/image-product-2.jpg" class="picture rounded" alt="image 2">
+          <img src="images/image-product-3.jpg" class="picture rounded" alt="image 3">
+          <img src="images/image-product-4.jpg" class="picture rounded" alt="image 4">
         </div>
         <div class="gallery-arrows">
           <button class="arrow bg-light-blue" id="prev">
@@ -106,10 +106,22 @@
           </button>
         </div>
         <div class="thumbnails gap-1" id="gallery-large">
-          <img src="images/image-product-1.jpg" class="rounded active-large" alt="image 1">
-          <img src="images/image-product-2.jpg" class="rounded" alt="image 2">
-          <img src="images/image-product-3.jpg" class="rounded" alt="image 3">
-          <img src="images/image-product-4.jpg" class="rounded" alt="image 4">
+          <div class="relative active-large">
+            <img src="images/image-product-1.jpg" class="rounded" alt="image 1">
+            <span class="rounded bg-white"></span>
+          </div>
+          <div class="relative">
+            <img src="images/image-product-2.jpg" class="rounded" alt="image 2">
+            <span class="rounded bg-white"></span>
+          </div>
+          <div class="relative">
+            <img src="images/image-product-3.jpg" class="rounded" alt="image 3">
+            <span class="rounded bg-white"></span>
+          </div>
+          <div class="relative">
+            <img src="images/image-product-4.jpg" class="rounded" alt="image 4">
+            <span class="rounded bg-white"></span>
+          </div>
         </div>
       </div>
 
@@ -165,6 +177,54 @@
         </div>
       </div>
     </main>
+  </div>
+  <div class="gallery-modal bg-black-transparent" id="gallery-modal">
+    <div class="s gap-1">
+      <div class="modal-close">
+        <button class="mb-2" id="modal-close">
+          <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg">
+            <path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 
+            7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#ff7d1a" fill-rule="evenodd"/>
+          </svg>
+        </button>
+      </div>
+      <div id="gallery-modal-images" class="gallery">
+        <img src="images/image-product-1.jpg" class="picture rounded active" alt="image 1">
+        <img src="images/image-product-2.jpg" class="picture rounded" alt="image 2">
+        <img src="images/image-product-3.jpg" class="picture rounded" alt="image 3">
+        <img src="images/image-product-4.jpg" class="picture rounded" alt="image 4">
+      </div>
+      <div class="gallery-arrows">
+        <button class="arrow bg-light-blue" id="modal-prev">
+          <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/>
+          </svg>
+        </button>
+        <button class="arrow bg-light-blue" id="modal-next">
+          <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/>
+          </svg>
+        </button>
+      </div>
+      <div class="thumbnails gap-1" id="modal-thumbnails">
+        <div class="relative active-large">
+          <img src="images/image-product-1.jpg" class="rounded" alt="image 1">
+          <span class="rounded bg-white"></span>
+        </div>
+        <div class="relative">
+          <img src="images/image-product-2.jpg" class="rounded" alt="image 2">
+          <span class="rounded bg-white"></span>
+        </div>
+        <div class="relative">
+          <img src="images/image-product-3.jpg" class="rounded" alt="image 3">
+          <span class="rounded bg-white"></span>
+        </div>
+        <div class="relative">
+          <img src="images/image-product-4.jpg" class="rounded" alt="image 4">
+          <span class="rounded bg-white"></span>
+        </div>
+      </div>
+    </div>
   </div>
 <script src="js/gallery.js"></script>
 <script src="js/menu.js"></script>

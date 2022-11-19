@@ -61,6 +61,8 @@ p, h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: "Kumbh Sans", sans-serif;
+  width: 100%;
+  height: 100%;
 }
 
 /* font sizes */
@@ -308,18 +310,6 @@ a {
   color: hsl(220deg, 13%, 13%);
 }
 
-.active-item {
-  display: block;
-}
-
-.flex {
-  display: flex;
-}
-
-.j {
-  display: block;
-}
-
 .gallery {
   position: relative;
 }
@@ -354,19 +344,6 @@ a {
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
 }
-.gallery .gallery-arrows {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 16px;
-}
-.gallery .gallery-arrows .arrow {
-  padding: 11px 14px;
-  border-radius: 50%;
-}
 
 .description {
   display: flex;
@@ -399,6 +376,29 @@ a {
   width: 100%;
   height: 56px;
   box-shadow: 0px 20px 50px -20px var(--orange);
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: space-between;
+}
+.thumbnails img {
+  min-width: 50px;
+  cursor: pointer;
+}
+
+.gallery-arrows {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px;
+}
+.gallery-arrows .arrow {
+  padding: 11px 14px;
+  border-radius: 50%;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -449,24 +449,67 @@ a {
     flex-direction: column;
   }
   main .gallery img {
-    border-radius: 10px;
+    cursor: pointer;
   }
   main .gallery .gallery-arrows {
     display: none;
   }
   main .gallery .thumbnails {
     display: flex;
-    justify-content: space-between;
-  }
-  main .gallery .thumbnails img {
-    min-width: 50px;
-    cursor: pointer;
-  }
-  main .gallery .active-large {
-    opacity: 0.6;
-    border: 2px solid hsl(26deg, 100%, 55%);
   }
   main .description {
     width: 50%;
   }
+}
+.gallery-modal {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: auto;
+}
+.gallery-modal .modal-close {
+  display: flex;
+  justify-content: flex-end;
+}
+.gallery-modal .modal-close button {
+  margin: 0;
+}
+.gallery-modal .s {
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.gallery-modal .s img {
+  width: 100%;
+}
+.gallery-modal .s .thumbnails {
+  padding: 0 40px;
+}
+
+.active-item {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.relative {
+  position: relative;
+}
+
+.active-large span {
+  position: absolute;
+  top: 0;
+  opacity: 0.75;
+  width: 100%;
+  height: 100%;
+  outline: solid 2px hsl(26deg, 100%, 55%);
 }/*# sourceMappingURL=styles.css.map */
