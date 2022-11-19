@@ -362,7 +362,10 @@ a {
   padding: 4px 8px;
   border-radius: 6px;
 }
-.description .summary {
+.description .buttons {
+  flex-direction: column;
+}
+.description .buttons .summary {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -403,9 +406,9 @@ a {
 
 @media only screen and (min-width: 1000px) {
   .head {
-    padding: 24px 165px;
+    padding: 24px 50px;
   }
-  .head header button {
+  .head header button#menu-button {
     display: none;
   }
   .head header ul {
@@ -424,24 +427,14 @@ a {
     display: block;
     border: 1px solid #E4E9F2;
   }
-  h1.f-xl {
-    font-size: 44px;
-    line-height: 48px;
-  }
   .gap-1 {
     gap: 31px;
   }
   main {
-    padding: 90px 283px;
+    padding: 20px 50px;
     display: flex;
     align-items: center;
     gap: 115px;
-  }
-  main .buttons {
-    display: flex;
-  }
-  main .buttons .summary {
-    max-width: 157px;
   }
   main .gallery {
     width: 50%;
@@ -449,6 +442,7 @@ a {
     flex-direction: column;
   }
   main .gallery img {
+    border-radius: 10px;
     cursor: pointer;
   }
   main .gallery .gallery-arrows {
@@ -459,6 +453,12 @@ a {
   }
   main .description {
     width: 50%;
+  }
+  main .description .buttons {
+    flex-direction: row;
+  }
+  main .description .buttons .summary {
+    max-width: 157px;
   }
 }
 .gallery-modal {
@@ -479,20 +479,43 @@ a {
 .gallery-modal .modal-close button {
   margin: 0;
 }
-.gallery-modal .s {
+.gallery-modal > div {
   max-width: 550px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
 }
-.gallery-modal .s img {
+.gallery-modal > div img {
   width: 100%;
 }
-.gallery-modal .s .thumbnails {
+.gallery-modal > div .thumbnails {
   padding: 0 40px;
 }
 
+@media only screen and (min-width: 1400px) {
+  .head {
+    padding: 24px 165px;
+  }
+  .basket {
+    right: 90px;
+  }
+  main {
+    padding: 65px 213px;
+  }
+  .description.p-1 {
+    padding: 0;
+  }
+  h1.f-xl {
+    font-size: 44px;
+    line-height: 48px;
+  }
+}
+@media only screen and (min-width: 1700px) {
+  main {
+    padding: 65px 310px;
+  }
+}
 .active-item {
   display: block;
 }

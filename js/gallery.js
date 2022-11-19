@@ -44,7 +44,9 @@ const clickThumbnail = (i) => {
 }
 
 const showModal = () => {
-    galleryModal.classList.add("flex");
+    if(window.innerWidth >= 1000) {
+        galleryModal.classList.add("flex");
+    }
 }
 
 const closeModal = (e) => {
@@ -70,8 +72,3 @@ modalPrev.addEventListener('click', function(){slide("prev")});
 modalNext.addEventListener('click', function(){slide("next")});
 modalBtn.addEventListener('click', function(){closeModal("btn")});
 galleryModal.addEventListener("click", function(){closeModal(event)});
-// window.addEventListener('click', function(e){   
-//     if (galleryModal.classList.contains("flex") && !galleryModal.firstElementChild.contains(e.target)) {
-//         galleryModal.classList.remove("flex");
-//     }
-// });

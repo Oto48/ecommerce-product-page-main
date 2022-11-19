@@ -379,12 +379,15 @@ a {
         }
     }
 
-    .summary {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        height: 56px;
+    .buttons {
+        flex-direction: column;
+        .summary {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 56px;
+        }
     }
     
     .purchase {
@@ -425,9 +428,9 @@ a {
 @media only screen and (min-width: 1000px) {
 
     .head {
-        padding: 24px 165px;
+        padding: 24px 50px;
         header {
-            button {
+            button#menu-button {
                 display: none;
             }
             ul {
@@ -452,28 +455,15 @@ a {
         }
     }
 
-    h1.f-xl {
-        font-size: 44px;
-        line-height: 48px;
-    }
-
     .gap-1 {
         gap: 31px;
     }
 
     main {
-        padding: 90px 283px;
+        padding: 20px 50px;
         display: flex;
         align-items: center;
         gap: 115px;
-
-        .buttons {
-            display: flex;
-
-            .summary {
-                max-width: 157px;
-            }
-        }
 
         .gallery {
             width: 50%;
@@ -481,6 +471,7 @@ a {
             flex-direction: column;
 
             img {
+                border-radius: 10px;
                 cursor: pointer;
             }
 
@@ -495,6 +486,13 @@ a {
 
         .description {
             width: 50%;
+
+            .buttons {
+                flex-direction: row;
+                .summary {
+                    max-width: 157px;
+                }
+            }
         }
     }
 }
@@ -518,7 +516,7 @@ a {
         }
     }
 
-    .s{
+    & > div{
         max-width: 550px;
         display: flex;
         flex-direction: column;
@@ -534,6 +532,35 @@ a {
     }
 }
 
+@media only screen and (min-width: 1400px) {
+    .head {
+        padding: 24px 165px;
+    }
+
+    .basket {
+        right: 90px;
+    }
+    
+    main {
+        padding: 65px 213px;
+    }
+
+    .description.p-1 {
+        padding: 0;
+    }
+
+    h1.f-xl {
+        font-size: 44px;
+        line-height: 48px;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    main {
+        padding: 65px 310px;
+    }
+}
+
 .active-item {
     display: block;
 }
@@ -546,18 +573,7 @@ a {
     position: relative;
 }
 
-// .active-large {
-//     opacity: 0.60;
-//     outline: solid 2px $orange;
-// }
-
 .active-large {
-    // position: absolute;
-    // top: 0;
-    // opacity: 0.75;
-    // width: 100%;
-    // height: 100%;
-    // outline: solid 2px $orange;
     span {
         position: absolute;
         top: 0;
